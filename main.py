@@ -14,27 +14,8 @@ def download_image(url : str,number : int,path : str) -> None:
 		f.write(image_info.content)
 if __name__ == '__main__':
 	web_url = 'https://e-hentai.org/g/4027815/59dcbe77fc/'
-	cookies = {
-		'sl': 'dm_1',
-		'nw': '1',
-	}
-	headers = {
-		'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:152.0) Gecko/20100101 Firefox/152.0',
-		'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-		'Accept-Language': 'zh-CN,zh;q=0.9,zh-TW;q=0.8,zh-HK;q=0.7,en-US;q=0.6,en;q=0.5',
-		# 'Accept-Encoding': 'gzip, deflate, br, zstd',
-		'Alt-Used': 'e-hentai.org',
-		'Connection': 'keep-alive',
-		# 'Cookie': 'sl=dm_1; nw=1',
-		'Upgrade-Insecure-Requests': '1',
-		'Sec-Fetch-Dest': 'document',
-		'Sec-Fetch-Mode': 'navigate',
-		'Sec-Fetch-Site': 'none',
-		'Sec-Fetch-User': '?1',
-		'Priority': 'u=0, i',
-		# Requests doesn't support trailers
-		# 'TE': 'trailers',
-	}
+	cookies = 'None'
+	headers = 'None'
 	session = requests.Session()
 	if not cookies == 'None':
 		cookie_jar = RequestsCookieJar()
