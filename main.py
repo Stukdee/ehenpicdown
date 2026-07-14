@@ -4,7 +4,6 @@ import re
 from bs4 import BeautifulSoup
 from os import makedirs
 import multiprocessing
-import threading
 web_url = 'None'
 cookies = 'None'
 headers = 'None'
